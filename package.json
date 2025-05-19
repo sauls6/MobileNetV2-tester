@@ -1,0 +1,37 @@
+{
+  "name": "mobilenetv2-tester",
+  "version": "1.0.0",
+  "description": "A simple web application to test MobileNetV2 pre-trained model",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "webpack serve --mode development"
+  },
+  "keywords": [
+    "tensorflow",
+    "mobilenetv2",
+    "image-classification"
+  ],
+  "author": "Saúl Sánchez Rangel",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.19.0",
+    "@tensorflow/tfjs-converter": "^4.19.0",
+    "@tensorflow/tfjs-core": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "css-loader": "^6.10.0",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.3"
+  }
+}

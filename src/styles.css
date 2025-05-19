@@ -1,0 +1,46 @@
+/* Main styles for the application */
+
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#outputImage {
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.progress {
+  height: 5px;
+}
+
+.result-row {
+  margin-bottom: 8px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px solid #e9ecef;
+}
