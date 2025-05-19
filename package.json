@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "A simple web application to test MobileNetV2 pre-trained model",
   "main": "dist/index.js",
+  "homepage": "https://sauls6.github.io/MobileNetV2-tester",
   "scripts": {
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "build": "tsc",
-    "serve": "webpack serve --mode development"
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "tensorflow",
@@ -24,7 +27,7 @@
   "devDependencies": {
     "@types/node": "^20.11.28",
     "css-loader": "^6.10.0",
-    "gh-pages": "^6.3.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
